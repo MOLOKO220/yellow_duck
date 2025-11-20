@@ -1,0 +1,55 @@
+.SliderItem {
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 353px;
+  height: 411px;
+  box-shadow: 0 4px 16px 0 rgba(37, 50, 75, 0.15);
+  background: #fff;
+  padding: 30px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 390px) {
+    width: 310px;
+    height: 451px;
+  }
+  @media (max-width: 340px) {
+    width: 310px;
+  }
+  > header {
+    display: flex;
+    gap: 20px;
+    > div {
+      height: 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > h6 {
+        font-family: var(--font-roboto), sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        color: #25324b;
+      }
+      > div {
+        font-family: var(--font-roboto), sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #4640de;
+      }
+      > p {
+        font-family: var(--font-roboto), sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #7c8493;
+      }
+    }
+  }
+  > main {
+    font-family: var(--font-rubik), sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #25324b;
+  }
+}

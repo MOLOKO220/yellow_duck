@@ -1,0 +1,95 @@
+.Fifth_section {
+  background: #f8f8fd;
+  min-height: 579px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0 10px;
+  height: auto;
+  flex: 0 0 auto;
+  clip-path: polygon(190px 0, 100% 0, 100% 100%, 0 100%, 0 60px);
+
+  @media (max-width: 1030px) {
+    padding: 72px 0 42px 0;
+  }
+  > div {
+    z-index: 2;
+    position: relative;
+    height: 465px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1030px) {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      gap: 40px;
+      height: auto;
+    }
+    > main {
+      width: 422px;
+      height: 298px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      @media (max-width: 1160px) {
+        height: 400px;
+      }
+      @media (max-width: 1030px) {
+        width: 80vw;
+        gap: 20px;
+        justify-content: center;
+        height: auto;
+      }
+      h3 {
+        font-family: var(--font-lato), sans-serif;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 110%;
+        color: #25324b;
+        > span {
+          color: #26a4ff;
+        }
+      }
+      > p {
+        font-family: var(--font-rubik), sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #25324b;
+      }
+      > button {
+        border-radius: 6px;
+        width: 200px;
+        height: 51px;
+        background: #4640de;
+        font-family: var(--font-rubik), sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #fff;
+        transition: 300ms;
+        border: solid 1px #4640de;
+        &:hover {
+          background: white;
+          color: #4640de;
+          border: solid 1px #4640de;
+        }
+      }
+    }
+  }
+  > img {
+    position: absolute;
+  }
+  > .Fifth_section_back1 {
+    top: -150px;
+    right: 150px;
+  }
+  > .Fifth_section_back2 {
+    bottom: -330px;
+    right: -200px;
+  }
+}

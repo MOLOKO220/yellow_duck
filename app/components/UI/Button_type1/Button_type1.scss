@@ -1,0 +1,20 @@
+.Button_type1 {
+  font-family: var(--font-rubik), sans-serif;
+  color: #515b6f;
+  font-weight: 600;
+  font-size: clamp(10px, 1.5vw, 16px);
+  line-height: 160%;
+  height: 100%;
+  background: none;
+  border-bottom: solid 4px rgba(69, 64, 222, 0);
+  transition: 300ms;
+  &:hover {
+    transform: scale(1.05);
+    color: #4540de;
+    border-bottom: solid 4px #4540de;
+  }
+}
+.Button_type1__active {
+  color: #4540de;
+  border-bottom: solid 4px #4540de;
+}

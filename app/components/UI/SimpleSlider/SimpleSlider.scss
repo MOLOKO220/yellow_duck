@@ -1,0 +1,44 @@
+.SimpleSlider {
+  max-width: 772px;
+  height: 480px;
+  overflow: hidden;
+  @media (max-width: 780px) {
+    max-width: 400px;
+  }
+  @media (max-width: 390px) {
+    height: 580px;
+  }
+  .slick-slider {
+    height: 100%;
+    .slick-track {
+      display: flex;
+      gap: 32px;
+      @media (max-width: 600px) {
+        margin-left: 25px;
+      }
+      @media (max-width: 390px) {
+        margin-left: 40px;
+      }
+    }
+    .slick-dots {
+      display: flex !important;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 42px;
+      > li {
+        > button {
+          height: 12px;
+          width: 12px;
+          background: #d6ddeb;
+          border-radius: 50%;
+          font-size: 0;
+        }
+      }
+      .slick-active {
+        > button {
+          background: #4640de;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.Second_section {
+  background: white;
+  padding: 0 10px;
+  > div {
+    padding: 72px 0;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1180px) {
+      align-items: center;
+      flex-direction: column;
+    }
+    > main {
+      gap: 24px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      @media (max-width: 1180px) {
+        align-items: center;
+      }
+      > div {
+        > h3 {
+          font-family: var(--font-lato), sans-serif;
+          font-weight: 800;
+          font-size: 32px;
+          line-height: 120%;
+          color: #25324b;
+          margin-bottom: 16px;
+        }
+      }
+      > .Second_section__info {
+        max-width: 752px;
+        min-height: 262px;
+        width: 90vw;
+        > p {
+          font-family: var(--font-rubik), sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: #515b6f;
+        }
+      }
+      > .Second_section__social {
+        margin: 24px 0 40px 0;
+        > div {
+          display: flex;
+          gap: 16px;
+          > a {
+            border: 1px solid #4640de;
+            padding: 8px;
+            width: auto;
+            height: 42px;
+            font-family: var(--font-rubik), sans-serif;
+            font-weight: 500;
+            font-size: clamp(12px, 1.5vw, 16px);
+            line-height: 160%;
+            color: #4640de;
+            transition: 300ms;
+            display: inline-flex;
+            align-items: center;
+            > svg {
+              margin-right: 10px;
+            }
+            &:hover {
+              color: white;
+              background: #4640de;
+            }
+            &:active {
+              transition: 200ms;
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+      > img {
+        @media (max-width: 760px) {
+          width: 95vw;
+          height: auto;
+          background-size: cover;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    > aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 64px;
+    }
+  }
+}

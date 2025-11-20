@@ -1,0 +1,89 @@
+.Third_section {
+  min-height: 436px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  flex: none;
+  @media (max-width: 1200px) {
+    padding: 30px;
+  }
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    > header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      > h3 {
+        font-family: var(--font-lato), sans-serif;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 120%;
+        color: #25324b;
+      }
+      > a {
+        font-family: var(--font-rubik), sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: #4640de;
+        transition: 300ms;
+        &:hover {
+          color: rgb(8, 197, 197);
+        }
+      }
+    }
+    > ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-top: 11px;
+      flex-wrap: wrap;
+      height: auto;
+      gap: 14px;
+      @media (max-width: 723px) {
+        justify-content: center;
+      }
+      > li {
+        border: 1px solid #d6ddeb;
+        border-radius: 4px;
+        padding: 24px;
+        width: 225px;
+        height: 243px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        > h6 {
+          font-family: var(--font-rubik), sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 160%;
+          text-align: center;
+          color: #25324b;
+        }
+        > p {
+          font-family: var(--font-rubik), sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          text-align: center;
+          color: #7c8493;
+        }
+        > div {
+          display: flex;
+          gap: 12px;
+        }
+      }
+    }
+  }
+}

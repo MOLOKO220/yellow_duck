@@ -1,0 +1,87 @@
+.Header {
+  height: 78px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  @media (max-width: 1200px) {
+    padding: 0 10px;
+  }
+  @media (max-width: 450px) {
+    padding: 0 5px;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      margin-right: 10px;
+      @media (max-width: 450px) {
+        width: 130px;
+      }
+      @media (max-width: 350px) {
+        width: 110px;
+      }
+    }
+    > nav {
+      max-width: 486px;
+      width: 70%;
+      height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 710px) {
+        display: none;
+      }
+    }
+    > div {
+      width: 331px;
+      height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 5px;
+      > div {
+        background: #d6ddeb;
+        width: 1px;
+        height: 50px;
+        @media (max-width: 450px) {
+          display: none;
+        }
+      }
+      > .Header_singIn_btn {
+        font-family: var(--font-rubik), sans-serif;
+        font-weight: 700;
+        font-size: clamp(12px, 1.5vw, 16px);
+        line-height: 160%;
+        text-align: center;
+        color: #fff;
+        background: #4640de;
+        width: 102px;
+        height: 50px;
+        border: solid 1px #4640de;
+        cursor: pointer;
+        transition: 300ms;
+        &:hover {
+          background: white;
+          color: #4640de;
+        }
+        &:active {
+          transition: 100ms;
+          transform: scale(0.9);
+        }
+        @media (max-width: 450px) {
+          width: 80px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+.Header_height {
+  min-height: 74px;
+  width: 100%;
+}

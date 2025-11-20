@@ -1,0 +1,90 @@
+.MobileNav {
+  display: none;
+  @media (max-width: 710px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    padding: 0 16px;
+    position: fixed;
+    top: 0px;
+    left: -100vw;
+    transition: 300ms;
+    .MobileNav_close_btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      height: 30px;
+      width: 30px;
+      background: none;
+      z-index: 1;
+      cursor: pointer;
+      &:hover {
+        > div {
+          background: #4540de;
+        }
+      }
+      &:active {
+        transition: 100ms;
+        transform: scale(0.9);
+      }
+      > div {
+        height: 4px;
+        width: 30px;
+        background: #515b6f;
+        position: absolute;
+        transition: 200ms;
+        &:first-child {
+          transform: rotate(45deg);
+        }
+        &:last-child {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    > nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      max-height: 400px;
+      > button {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+.MobileNav_active {
+  left: 0 !important;
+}
+.MobileNav_btn {
+  display: none;
+  @media (max-width: 710px) {
+    min-height: 30px;
+    min-width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 300ms;
+    > div {
+      width: 100%;
+      height: 5px;
+      background: #515b6f;
+      transition: 300ms;
+    }
+    &:hover {
+      transform: scale(1.1);
+      > div {
+        background: #4540de;
+      }
+    }
+    &:active {
+      transition: 100ms;
+      transform: scale(0.9);
+    }
+  }
+}

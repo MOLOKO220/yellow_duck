@@ -1,14 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Rubik, Lato, Roboto } from "next/font/google";
+import "./globals.scss";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const rubik = Rubik({
+  weight: ["400", "800", "700"],
+  variable: "--font-rubik",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lato = Lato({
+  weight: ["400", "700", "900"],
+  variable: "--font-lato",
+  subsets: ["latin"],
+});
+
+const roboto = Roboto({
+  weight: ["200", "400", "600"],
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
@@ -19,13 +27,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${rubik.variable} ${lato.variable} ${roboto.variable} antialiased`}
       >
         {children}
       </body>

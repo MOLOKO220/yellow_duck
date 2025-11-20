@@ -1,0 +1,59 @@
+.RegionByServices {
+  max-width: 376px;
+  min-height: 360px;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-bottom: 1px solid #d6ddeb;
+  padding-bottom: 20px;
+  @media (max-width: 1180px) {
+    margin-top: 40px;
+  }
+  > h6 {
+    font-family: var(--font-lato), sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+    color: #25324b;
+  }
+  > ul {
+    max-height: 224px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: 300ms;
+    overflow: hidden;
+    > li {
+      font-family: var(--font-rubik), sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #25324b;
+      > img {
+        margin-right: 16px;
+      }
+    }
+  }
+  .RegionByServices__active {
+    max-height: 400px;
+  }
+  > button {
+    font-family: var(--font-rubik), sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #4640de;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    > img {
+      transition: 300ms;
+    }
+  }
+  .RegionByServices__btn-active {
+    transform: rotate(180deg);
+  }
+}
